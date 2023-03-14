@@ -1,0 +1,102 @@
+*{
+	margin: 0;
+	padding: 0;
+
+	}
+body{
+	min-height: 100vh;
+	}
+.navbar{
+	overflow: hidden;
+	
+}
+nav{
+	color: white;
+}
+.jumbotron{
+	padding-top: 20px;
+	background: #e2edff;
+	background-image: url('./img/3.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0 -100px;
+	color: white;
+	overflow: hidden;
+}
+
+
+.jumbotron img{
+	height: 85px;
+	width: 86px;
+	border-radius: 50%;
+	box-shadow: 20px 30px 40px  grey;
+}
+
+
+.search-box {
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+	background-color: white;
+	align-items: center;
+	transition: 0.5s;
+	position:relative;
+	right: 5px;
+	color: black;
+}
+.icon {
+	position: relative;
+	top: 12%;
+	left: 7.4px;
+}
+.search-box.active {
+position:  relative;
+	width: 250px;
+	
+}
+
+.about p{
+	font-size: 20px;
+	font-family: Monospace;
+	opacity: 0;
+	transform: translate(-50px,0);
+	transition: .5s;
+}
+
+.about p.active{
+	opacity: 1;
+	transform: translate(0,0);
+	
+}
+
+
+
+
+.Project .thumbnail{
+	opacity: 0;
+	transition: .5s;
+	transform: translate(0, -20px);
+}
+.Project .thumbnail.active{
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+
+
+
+footer{
+	height: 50px;
+	width: 100%;
+	background-color: black;
+	color: white;
+	bottom: 0;
+	text-align: center;
+	padding-top: 10px;
+	margin-top: 20px;
+	}
+
+hr{
+	position: relative;
+	left: 25%;
+}
