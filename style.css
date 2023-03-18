@@ -1,111 +1,96 @@
-*{
-	margin: 0;
-	padding: 0;
-
-	}
 html{
 	position: relative;
 }
-body{
-	min-height: 100vh;
-	}
-.navbar{
-	overflow: hidden;
-	
-}
-nav{
-	color: white;
-}
 .jumbotron{
 	padding-top: 20px;
-	background: #e2edff;
-	background-image: url('./img/3.jpg');
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: 0 -100px;
-	color: white;
-	overflow: hidden;
+	background-color: #e2edff;
 }
-
 
 .jumbotron img{
-	height: 85px;
-	width: 86px;
-	border-radius: 50%;
-	box-shadow: 20px 30px 40px  grey;
+	box-shadow: 0 0 7px grey;
+
+}
+.about{
+	margin-top: 30px;
+}
+.project{
+	padding-top: 20px;
+	background-color: #e2edff;
+	justify-content: center;
+	align-self: center;
+}
+.project img{
+	margin-top: 10px;
 }
 
+#contact{
 
-.search-box {
-	width: 30px;
-	height: 30px;
-	border-radius: 50px;
-	background-color: white;
-	align-items: center;
-	transition: 0.5s;
-	position:relative;
-	right: 5px;
-	color: black;
 }
-.icon {
-	position: relative;
-	top: 12%;
-	left: 7.4px;
+#contact h2{
+	margin-top: 20px;
 }
-.search-box.active {
-position:  relative;
-	width: 250px;
-	
-}
-
-.about p{
-	font-size: 20px;
-	font-family: Monospace;
-	opacity: 0;
-	transform: translate(-50px,0);
-	transition: .5s;
-}
-
-.about p.active{
-	opacity: 1;
-	transform: translate(0,0);
-	
-}
-
-
-
-
-.Project .thumbnail{
-	opacity: 0;
-	transition: .5s;
-	transform: translate(0, -20px);
-}
-.Project .thumbnail.active{
-	opacity: 1;
-	transform: translate(0,0);
-}
-
-
-
-
 footer{
 	height: 50px;
-	width: 100%;
-	background-color: black;
-	color: white;
-	bottom: 0;
-	text-align: center;
-	padding-top: 10px;
-	margin-top: 20px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-
-
-	}
+}
 
 hr{
 	position: relative;
 	left: 25%;
 }
+.svg3{
+	position: relative;
+	bottom: -2;
+}
+	.slide-wrapper{
+				position: relative;
+				max-width: 48rem;
+				margin: 0 auto;
+				box-shadow: 0 0 15px grey;
+				padding: 2px;
+				padding-bottom: 10px;
+	
+			}
+			.slider{
+				display: flex;
+				aspect-ratio: 16 / 9;
+				overflow-x: auto;
+				scroll-snap-type: x mandatory;
+				scroll-behavior: smooth;
+			
+			}
+			.slider img{
+				flex: 1 0 100%;
+				scroll-snap-align: start;
+				object-fit: cover;
+			}
+			.slide-nav{
+			
+				position: absolute;
+				bottom: 2rem;
+				left: 50%;
+			    display: flex;
+			    column-gap: 4rem;
+				transform: translateX(-50%);
+			    z-index: 1;
+
+			}
+			.slide-nav a{
+				width: 1.3rem;
+				height: 1.3rem;
+				
+				border-radius: 50%;
+				
+				background-color: #fff;
+			}
+
+			@media only screen and (max-width: 600px){
+				.slide-nav{
+					column-gap: 1.5rem;
+					bottom: 1.5rem;
+				}
+				.slide-nav a{
+					width: 0.5rem;
+					height: 0.5rem;
+					
+				}
+			}
