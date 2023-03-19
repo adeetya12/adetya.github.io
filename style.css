@@ -1,6 +1,28 @@
-html{
-	position: relative;
+
+*{
+	padding: 0;
+	margin: 0;
 }
+
+
+.navbar1{
+	width: 100%;
+	height: 45px;
+	background-color: #0d6efd;
+
+} 
+.navbar1 ul{
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	gap: 15px;
+	padding: 10px;
+}
+.navbar1 ul li a{
+	text-decoration: none;
+	color: white;
+}
+
 .jumbotron{
 	padding-top: 20px;
 	background-color: #e2edff;
@@ -10,18 +32,26 @@ html{
 	box-shadow: 0 0 7px grey;
 
 }
+
+
 .about{
+	padding: 0;
+	margin: 0;
 	margin-top: 30px;
 }
+
+
 .project{
 	padding-top: 20px;
 	background-color: #e2edff;
 	justify-content: center;
 	align-self: center;
+	
 }
 .project img{
 	margin-top: 10px;
 }
+
 
 #contact{
 
@@ -29,6 +59,8 @@ html{
 #contact h2{
 	margin-top: 20px;
 }
+
+
 footer{
 	height: 50px;
 }
@@ -41,6 +73,8 @@ hr{
 	position: relative;
 	bottom: -2;
 }
+
+
 	.slide-wrapper{
 				position: relative;
 				max-width: 48rem;
@@ -51,6 +85,7 @@ hr{
 	
 			}
 			.slider{
+				gap: 10px;
 				display: flex;
 				aspect-ratio: 16 / 9;
 				overflow-x: auto;
@@ -84,6 +119,7 @@ hr{
 			}
 
 			@media only screen and (max-width: 600px){
+				
 				.slide-nav{
 					column-gap: 1.5rem;
 					bottom: 1.5rem;
